@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Formatic | Technology & Innovation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">IDEAL <span>FORMATIC.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">WELCOME TO IDEAL FORMATIC</p>
+
+        <h1>Innovation Today.<br>
+            <span>Perfection Tomorrow.</span>
+        </h1>
+
+        <p>
+            We create digital experiences through technology,
+            creativity and business solutions.
+        </p>
+
+        <a href="#services" class="main-btn">Explore Services →</a>
+        <a href="#contact" class="outline-btn">Contact Us</a>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-circle">IFG</div>
+        <h2>Technology<br>Meets Creativity</h2>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section about" id="about">
+    <div class="section-title">
+        <p>WHO WE ARE</p>
+        <h2>About Our Company</h2>
+    </div>
+
+    <div class="about-content">
+        <div>
+            <h2>Formatic Makes To Perfection.</h2>
+            <p>
+                Ideal Formatic Group of Companies is a Salem-based
+                business group associated with technology,
+                software, creativity and business development.
+            </p>
+
+            <p>
+                We focus on digital solutions, creative services
+                and technology-driven business support.
+            </p>
+
+            <a href="#contact" class="main-btn">Know More →</a>
+        </div>
+
+        <div class="about-box">
+            <h2>IFG</h2>
+            <h3>Innovation | Technology | Creativity</h3>
+            <p>Building ideas into digital solutions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section services" id="services">
+    <div class="section-title">
+        <p>WHAT WE DO</p>
+        <h2>Our Services</h2>
+        <span>Explore our technology and creative services.</span>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterServices('All', this)">All</button>
+        <button class="filter-btn" onclick="filterServices('Technology', this)">Technology</button>
+        <button class="filter-btn" onclick="filterServices('Creative', this)">Creative</button>
+        <button class="filter-btn" onclick="filterServices('Business', this)">Business</button>
+    </div>
+
+    <div class="service-grid" id="serviceGrid"></div>
+</section>
+
+<!-- DIVISIONS -->
+<section class="section divisions">
+    <div class="section-title">
+        <p>OUR BUSINESS AREAS</p>
+        <h2>Our Divisions</h2>
+    </div>
+
+    <div class="division-grid">
+        <div class="division-card">
+            <h3>Software & Technology</h3>
+            <p>Software, web solutions and IT services.</p>
+        </div>
+
+        <div class="division-card">
+            <h3>Institute & Training</h3>
+            <p>Technical education and skill development.</p>
+        </div>
+
+        <div class="division-card">
+            <h3>Creativity & Media</h3>
+            <p>Design, media and creative solutions.</p>
+        </div>
+
+        <div class="division-card">
+            <h3>Trading & Business</h3>
+            <p>Business development and trading activities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+    <div class="section-title">
+        <p>OUR WORK</p>
+        <h2>Featured Projects</h2>
+    </div>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Modern website experiences.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>Creative branding and visual design.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">📱</div>
+            <h3>Digital Solutions</h3>
+            <p>Technology-based business solutions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Let's Work Together</h2>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>📍 Salem, Tamil Nadu, India</p>
+            <p>📧 idealformatic@gmail.com</p>
+            <p>📞 +91 75989 49248</p>
+            <p>🌐 www.idealformatic.com</p>
+
+            <a href="https://www.idealformatic.com/"
+               target="_blank" class="main-btn">
+                Visit Official Website
+            </a>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="main-btn">Send Message →</button>
+            <p id="formMessage"></p>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>IDEAL FORMATIC.</h2>
+    <p>Formatic Makes To Perfection.</p>
+    <p>© 2026 Ideal Formatic Website Concept | Internship Project</p>
+</footer>
+
+<button id="topButton" onclick="scrollToTop()">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
